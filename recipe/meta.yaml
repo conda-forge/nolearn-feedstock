@@ -11,18 +11,18 @@ source:
   sha256: bab2dc2aeb9560264791298f1d206b78fd9b345cecdd500b34f469d367765158
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=2.7
   run:
     - joblib
     - lasagne
-    - python >=3.6
+    - python >=2.7
     - scikit-learn <0.20
     - tabulate
     - theano
